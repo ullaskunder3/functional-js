@@ -1,0 +1,3 @@
+# Awesome Functional JavaScript
+
+...
