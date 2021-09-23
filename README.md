@@ -26,10 +26,40 @@
 
 ### 01. Functional programming
 
-first Its one of the programming paradigm
-
 - Imperative
 - Declarative
 - Object Oriented
 - __Functional__ :
 - ...
+
+first Its one of the programming paradigm
+
+Difference Between Pure and impure function
+
+Pure Function is deterministic means output is totally depends on the input
+
+```js
+
+function greet(name){
+    return `Hello, ${name}`;
+}
+
+greet(Ullas); // Hello, Ullas
+greet(Awesome); // Hello, Awesome
+
+```
+
+Impure Function
+
+```js
+let name = "Ullas"
+
+function greet(){
+    console.log("Hello, ", name);
+}
+greet(); // Hello, Ullas
+
+name = "Awesome";
+greet(); //Hello, Awesome
+
+```
